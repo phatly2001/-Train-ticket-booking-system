@@ -1,0 +1,62 @@
+<section class="footer ">
+		<div class="container">
+			<div class="footer-content">
+				<ul>
+					<li><span class="logo"><i class='bx bxs-train' style=""></i>
+							VeTauLua</span></li>
+					<li><i class='bx bxs-map'></i> 96 Phan Liem</li>
+					<li><i class='bx bxs-phone'></i> (+84) 0908070605</li>
+					<li><i class='bx bx-mail-send'></i> gamil123@gmail.com</li>
+				</ul>
+				<ul>
+					<li><span>Company</span></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul>
+					<li><span>Contact</span></li>
+					<li><i class='bx bxl-facebook'></i><a href="#">Facebook</a></li>
+					<li><i class='bx bxl-instagram-alt'></i><a href="#">Instagram</a></li>
+					<li><i class='bx bxl-twitter'></i><a href="#">Twitter</a></li>
+				</ul>
+				<div class="subcribe p-3">
+					<label for="exampleFormControlTextarea1" class="form-label"
+						style="color: white;">Subcribe </label>
+					<div class="row">
+						<div class=" col-6">
+							<input type="text" class="form-control"
+								id="exampleFormControlInput1" placeholder="Enter the email..">
+						</div>
+						<div class="col-lg-6  ">
+							<a class="btn bg-gradient-dark mb-0" href="javascript:;">Submit</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="copy-right">
+				<span>Copyright ©2021 All rights reserved <i
+					class='bx bxs-heart' style="color: red;"></i> <span style="color: orange">VeTauLua</span>
+				</span>
+			</div>
+		</div>
+	</section>
+
+
+</body>
+<!--   Core JS Files   -->
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./assets/js/myJs.js"></script>
+<!-- Github buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+<!-- script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.2"></script>
+<script src="../assets/js/soft-ui-dashboard.js"></script> -->
+<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+
+</html>
