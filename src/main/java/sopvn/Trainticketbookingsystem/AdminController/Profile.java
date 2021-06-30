@@ -3,11 +3,14 @@ package sopvn.Trainticketbookingsystem.AdminController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import sopvn.Trainticketbookingsystem.ulti.Mappings;
+import sopvn.Trainticketbookingsystem.ulti.ViewNames;
+
 @Controller
 public class Profile {
 
-	@RequestMapping("/Profile")
+	@RequestMapping(Mappings.ADMIN_PROFILE)
 	public String Index() {
-		return "admin-profile";
+		return ViewNames.ADMIN_PROFILE;
 	}
 }

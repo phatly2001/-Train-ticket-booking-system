@@ -1,4 +1,6 @@
-package model;
+package sopvn.Trainticketbookingsystem.model;
+
+import java.sql.Timestamp;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,11 +12,12 @@ import javax.persistence.Table;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 @Entity
-@Table(name = "station")
+@Table(name = "schedule")
 @EntityListeners(AuditingEntityListener.class)
-public class station {
+public class schedule {
 	private int id;
-	private String name;
+	private int routineid;
+	private Timestamp date;
 	private Boolean active;
 	
 
@@ -28,13 +31,23 @@ public class station {
 	}
 
 
-	@Column(name = "name", nullable = true)
-	public String getName() {
-		return name;
+	@Column(name = "date", nullable = true)
+	public Timestamp getDate() {
+		return date;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setDate(Timestamp date) {
+		this.date = date;
+	}
+
+
+	@Column(name = "routineid", nullable = true)
+	public int getRoutineId() {
+		return routineid;
+	}
+
+	public void setRoutineId(int routineid) {
+		this.routineid = routineid;
 	}
 
 

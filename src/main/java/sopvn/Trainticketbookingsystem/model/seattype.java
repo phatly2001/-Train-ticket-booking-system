@@ -1,4 +1,5 @@
-package model;
+package sopvn.Trainticketbookingsystem.model;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
@@ -9,32 +10,32 @@ import javax.persistence.Table;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 @Entity
-@Table(name = "train")
+@Table(name = "seattype")
 @EntityListeners(AuditingEntityListener.class)
-public class train {
+public class seattype {
 	private int id;
 	private String name;
-	private String serialnumber;
-	private Boolean bit;
+	private String description;
+	private Boolean active;
 	
 
-	@Column(name = "bit", nullable = true)
+	@Column(name = "active", nullable = true)
 	public Boolean getActive() {
-		return bit;
+		return active;
 	}
 
-	public void setActive(Boolean bit) {
-		this.bit = bit;
+	public void setActive(Boolean active) {
+		this.active = active;
 	}
 
 
-	@Column(name = "serialnumber", nullable = true)
-	public String getSerialNumber() {
-		return serialnumber;
+	@Column(name = "description", nullable = true)
+	public String getDescription() {
+		return description;
 	}
 
-	public void setSerialNumber(String serialnumber) {
-		this.serialnumber = serialnumber;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 

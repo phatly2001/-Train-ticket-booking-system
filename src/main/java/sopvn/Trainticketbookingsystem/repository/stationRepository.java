@@ -1,8 +1,8 @@
-package repository;
+package sopvn.Trainticketbookingsystem.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import model.station;
+import sopvn.Trainticketbookingsystem.model.station;
 
 public interface stationRepository extends JpaRepository<station, Integer> {
 	

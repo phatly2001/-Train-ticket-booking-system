@@ -1,4 +1,4 @@
-package model;
+package sopvn.Trainticketbookingsystem.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
