@@ -1,6 +1,11 @@
 <%@include file="../common/header.jspf"%>
 
-
+<style>
+.scrollStaion {
+	overflow: scroll;
+	height: 400px;
+}
+</style>
 <div class="container-fluid py-4">
 	<div class="row">
 		<div class="col-12">
@@ -146,6 +151,8 @@
 														</td>
 													</tr>
 												</c:forEach>
+
+
 											</tbody>
 										</table>
 									</div>
@@ -178,15 +185,14 @@
 														<div class="card-body px-0 pt-0 pb-2">
 															<div class="row p-3">
 																<div class=" col-12">
-																	<label for="stationName"
-																		class="form-label">Station name </label> <input
-																		type="text" class="form-control"
+																	<label for="stationName" class="form-label">Station
+																		name </label> <input type="text" class="form-control"
 																		id="stationName" name="name"
 																		placeholder="Station name..">
 																</div>
 																<div class=" col-2">
-																	<label for="stationActive"
-																		class="form-label">Active </label>
+																	<label for="stationActive" class="form-label">Active
+																	</label>
 																	<div class="form-check form-switch ps-0">
 
 																		<input class="form-check-input ms-auto"
@@ -206,7 +212,7 @@
 								</div>
 							</div>
 						</div>
-							<c:if test="${deletefailedstation eq true }">
+						<c:if test="${deletefailedstation eq true }">
 							<div class="alert alert-danger alert-dismissible fade show"
 								role="alert">
 								<strong>Error!</strong> Cannot delete this record because it is
@@ -221,13 +227,13 @@
 									<h6>Station</h6>
 								</div>
 								<div class="card-body px-0 pt-0 pb-2">
-									<div class="table-responsive p-0">
+									<div class="table-responsive p-0 scrollStaion">
 										<table class="table align-items-center mb-0">
 											<thead>
 												<tr>
 													<th
 														class="text-center text-uppercase text-secondary text-xxs font-weight-bolder ">Station
-														name</th>													
+														name</th>
 													<th
 														class="text-center text-uppercase text-secondary text-xxs font-weight-bolder ">Status
 													</th>
@@ -235,41 +241,41 @@
 												</tr>
 											</thead>
 											<tbody>
-											<c:forEach var="itemStation" items="${stations}">
+												<c:forEach var="itemStation" items="${stations}">
 													<tr>
-													<td class="align-middle text-center"><span
-														class=" text-sm font-weight-bold">${itemStation.name}</span></td>
-													<c:if test="${itemStation.active eq true}">
-													<td class="align-middle text-center text-sm"><span
-														class="badge badge-sm bg-gradient-success">Active</span></td>
-													</c:if>					 						
-													
+														<td class="align-middle text-center"><span
+															class=" text-sm font-weight-bold">${itemStation.name}</span></td>
+														<c:if test="${itemStation.active eq true}">
+															<td class="align-middle text-center text-sm"><span
+																class="badge badge-sm bg-gradient-success">Active</span></td>
+														</c:if>
+
 														<c:if test="${itemStation.active eq false }">
 															<td class="align-middle text-center text-sm"><span
-														class="badge badge-sm bg-gradient-secondary">Maintenance</span></td>
+																class="badge badge-sm bg-gradient-secondary">Maintenance</span></td>
 														</c:if>
-													<td class="align-middle">
-														<div class="ms-auto">
-															<a
-																class="btn btn-link text-danger text-gradient px-3 mb-0"
-																href="/StationDelete?id=${itemStation.id}"><i class="far fa-trash-alt me-2"></i>Delete</a>
-																<c:if test="${itemStation.active eq false}"> 
-																<a class="btn btn-link text-dark px-3 mb-0"
-																href="/StationEnable?id=${itemStation.id}"><i
-																class="fas fa-pencil-alt text-success me-2"
-																aria-hidden="true"></i>Enable</a>
+														<td class="align-middle">
+															<div class="ms-auto">
+																<a
+																	class="btn btn-link text-danger text-gradient px-3 mb-0"
+																	href="/StationDelete?id=${itemStation.id}"><i
+																	class="far fa-trash-alt me-2"></i>Delete</a>
+																<c:if test="${itemStation.active eq false}">
+																	<a class="btn btn-link text-dark px-3 mb-0"
+																		href="/StationEnable?id=${itemStation.id}"><i
+																		class="fas fa-pencil-alt text-success me-2"
+																		aria-hidden="true"></i>Enable</a>
 																</c:if>
-																	<c:if test="${itemStation.active eq true}"> 
-																<a class="btn btn-link text-dark px-3 mb-0"
-																href="/StationDisable?id=${itemStation.id}"><i
-																class="fas fa-pencil-alt text-danger me-2"
-																aria-hidden="true"></i>Disable</a>
-																</c:if>															
-														</div>
-													</td>
-												</tr>
-											</c:forEach>
-										
+																<c:if test="${itemStation.active eq true}">
+																	<a class="btn btn-link text-dark px-3 mb-0"
+																		href="/StationDisable?id=${itemStation.id}"><i
+																		class="fas fa-pencil-alt text-danger me-2"
+																		aria-hidden="true"></i>Disable</a>
+																</c:if>
+															</div>
+														</td>
+													</tr>
+												</c:forEach>
 											</tbody>
 										</table>
 									</div>
