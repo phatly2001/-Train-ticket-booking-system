@@ -20,7 +20,10 @@
 <!-- CSS Files -->
 <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.2"
 	rel="stylesheet" />
-<link rel="stylesheet" href="../../myCss.css" />
+<link rel="stylesheet" href="../assets/css/myCss.css" />
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet"
+	href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
 	<section class="header">
@@ -34,15 +37,81 @@
 				<li><a href="Signup"> Register</a></li>
 			</ul>
 		</nav>
+
 		<div class="main-slide">
 			<div class="bg"></div>
 			<div class="slide-header" id="slide-header">
-				<a href="#" class="logo"><i class='bx bxs-train'></i> VeTauLua</a>
+				<a href="/UserPage" class="logo"><i class='bx bxs-train'></i> VeTauLua</a>
 				<ul>
-					<li><a href="#">Home </a></li>
-					<li><a href="">About Us</a></li>
-					<li><a href="">Blog</a></li>
+					<li><a href="/UserPage">Home </a></li>
 					<li><a href="">Contact Us</a></li>
+					<li><div class="subnav">
+							<a class="subnavbtn" href="#"> Company <i
+								class="fa fa-caret-down"></i>
+							</a>
+							<div class="subnav-content">
+								<div class="container-md">
+									sadas
+								</div>
+							</div>
+						</div></li>
+					<li>
+						<div class="dropdown card">
+							<a href="" style="color: orange">Cart <span
+								class="dropbtn badge rounded-pill  bg-secondary">0</span></a>
+							<div class="dropdown-content card">
+								<div class="cart-item ">
+									<div class="empty">
+											<p>Empty Cart</p>
+										</div>
+									<div class="toast-body">
+										<div class="row">
+											<div class="col-10">
+												<div class="ticketInfo">TauA TanBinh-TanPhu</div>
+												<div class="ticketInfo">04/07/2021 - 6:00pm</div>
+												<div class="ticketInfo">Toa 5 - cho~ 1A</div>
+											</div>
+											<div class="col-2">
+												<i class='bx bx-trash'></i>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cart-item ">
+									<div class="toast-body">
+										<div class="row">
+											<div class="col-10">
+												<div class="ticketInfo">TauA TanBinh-TanPhu</div>
+												<div class="ticketInfo">04/07/2021 - 6:00pm</div>
+												<div class="ticketInfo">Toa 5 - cho~ 1A</div>
+											</div>
+											<div class="col-2">
+												<i class='bx bx-trash'></i>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cart-item ">
+									<div class="toast-body">
+										<div class="row">
+											<div class="col-10">
+												<div class="ticketInfo">TauA TanBinh-TanPhu</div>
+												<div class="ticketInfo">04/07/2021 - 6:00pm</div>
+												<div class="ticketInfo">Toa 5 - cho~ 1A</div>
+											</div>
+											<div class="col-2">
+												<i class='bx bx-trash'></i>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<a class="btn bg-gradient-dark mb-0" href="/CheckOut">Check
+									out </a>
+
+							</div>
+						</div>
+					</li>
 				</ul>
 			</div>
 			<div class="slide-body">
@@ -99,7 +168,7 @@
 									<div class="col-6">
 										<div class="row">
 											<div class="col-lg-12 p-3 ">
-												<a class="btn bg-gradient-dark mb-0" href="javascript:;">Search
+												<a class="btn bg-gradient-dark mb-0" href="/BookingTicketPage">Search
 													Tickets</a>
 											</div>
 										</div>

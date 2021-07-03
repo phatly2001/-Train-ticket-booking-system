@@ -1,0 +1,623 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;;
+}
+
+.row-center {
+	left: 25%;
+	position: relative;
+	top: 220px;
+}
+
+.nav-info {
+	position: relative;
+	display: inline-flex;
+	justify-content: space-evenly;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	background-color: white;
+}
+
+.nav-info ul:nth-child(1) {
+	position: relative;
+	display: inline-flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-info ul:nth-child(1) li {
+	color: black;
+	padding: 10px;
+}
+
+.nav-info ul:nth-child(1) li i {
+	color: orange;
+}
+
+.nav-info ul:nth-child(2) {
+	position: relative;
+	display: inline-flex;
+	list-style: none;
+	margin: 0;
+}
+
+.nav-info ul:nth-child(2) li a {
+	color: black;
+	padding: 10px;
+}
+
+.nav-info ul:nth-child(2) li a:hover {
+	color: orange;
+}
+
+.main-slide {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-image: url("/assets/img/slide1.jpg");
+	background-size: cover;
+}
+
+.bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: .25px;
+	color: white;
+	padding: 10px;
+}
+
+.logo:hover {
+	color: orange;
+}
+
+.logo i {
+	color: orange;
+	font-size: 35px;
+}
+
+.slide-header {
+	position: relative;
+	display: inline-flex;
+	justify-content: space-evenly;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	padding: 25px;
+	transition: .5s ease-in-out;
+}
+
+.slide-header.sticky {
+	position: fixed;
+	padding: 5px;
+	background: #252f40;
+	transition: .5s ease-in-out;
+	top: 0;
+	z-index: 100000;
+	width: 100%;
+}
+
+.slide-header ul {
+	position: relative;
+	display: inline-flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.slide-header ul li a {
+	color: white;
+	padding: 10px;
+}
+
+.slide-header ul li a:hover {
+	color: orange;
+}
+
+.slide-body {
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	top: 20%;
+}
+
+.slide-body h5 {
+	color: orange;
+}
+
+.slide-body h1 {
+	color: white;
+}
+
+.btn_show {
+	position: absolute;
+	top: -20%;
+	left: 30%;
+}
+
+.my-card {
+	overflow: hidden;
+}
+
+.my-card:hover .btn_show {
+	top: 25%;
+	transition: .4s ease-in-out;
+}
+
+.my-card:hover .card-header {
+	opacity: .5;
+}
+
+.footer {
+	position: relative;
+	width: 100%;
+	background-color: #252f40;
+}
+
+.footer-content {
+	display: inline-flex;
+	position: relative;
+	justify-content: space-evenly;
+	width: 100%;
+	align-items: center;
+	letter-spacing: .5px;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-content ul {
+	padding: 50px;
+}
+
+.footer-content ul li {
+	list-style: none;
+	padding: 5px;
+	color: #67748e;
+}
+
+.footer-content ul li span {
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.footer-content ul li a {
+	color: #67748e;
+}
+
+.footer-content ul li a:hover {
+	color: orange;
+	transition: .3s ease-out;
+}
+
+.container {
+	padding: 50px 0 50px !important;
+}
+
+.copy-right {
+	text-align: center;
+}
+
+.choose-train {
+	position: relative;
+	display: inline-flex;
+	overflow: hidden;
+}
+/* booking ticket page */
+.train-head {
+	position: relative;
+	background-color: #67748e;
+	padding: 20px;
+	border-radius: 40px 40px 20px 20px;
+	cursor: pointer;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.train-head.active {
+	background-color: #f9b30e;
+}
+
+.train-head:hover {
+	filter: drop-shadow(5px 5px 10px gray);
+	transition: .3s ease-in-out;
+}
+
+.train-head:hover .train-head-light span {
+	background-color: white;
+	filter: drop-shadow(8px 8px 30px gray) brightness(200%);
+	transition: .3s ease-in-out;
+}
+
+.train-head-name {
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	text-align: center;
+	margin: 0 0 10px 0;
+	color: white;
+}
+
+.train-head-name span {
+	background-color: #999;
+	padding: 0px 10px 0 10px;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.train-head-info {
+	position: relative;
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.train-head-info .title {
+	font-weight: bold;
+}
+
+.train-head-info .row:nth-child(3) p {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.train-head-light {
+	position: relative;
+	display: inline-flex;
+}
+
+.train-head-light span {
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	background-color: #999;
+	display: block;
+	margin: 30px 60px 20px 50px;
+	padding: 0;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide.slideSeat {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.train-content {
+	display: none;
+	padding: 60px 40px 60px 40px;
+}
+
+.train-body {
+	position: relative;
+	display: inline-flex;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.train-body ul {
+	display: inline-flex;
+	list-style: none;
+	margin: 0 1px 10px;
+	border-radius: 15%;
+	height: 18px;
+	overflow: visible;
+}
+
+.car-icon img {
+	width: 100%;
+	height: 50px;
+}
+
+.car-block {
+	width: 80px !important;
+	height: 50px;
+	min-height: 1px;
+	cursor: pointer;
+	display: inline-block;
+	float: none;
+	text-align: center;
+}
+
+.car-icon {
+	margin: 0 1px 15px;
+	border-radius: 15%;
+	height: 35px;
+	overflow: visible;
+}
+
+.car-available {
+	background-color: #f9b30e!important;
+}
+
+.car-booked {
+	background-color: red!important;
+}
+
+.car-selected {
+	background-color: green!important;
+}
+
+.seat-content {
+	display: none;
+	padding: 20px 40px 20px 40px;
+}
+
+.car-floor {
+	width: 100%;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 1px 1px 50px lightgray;
+	margin: 20px 0 10px;
+}
+
+.car-half-block {
+	float: left;
+	padding: 20px;
+	
+    
+}
+
+.car-seat {
+	display: flex;
+	flex: 0 0 14.28571428571429%;
+	padding: 5px;
+	position: relative;
+	margin: 0;
+}
+
+.car-seat ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.car-seats {
+	display: inline-flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	position:relative;
+}
+
+.car-seat input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+}
+.car-seat input[type="checkbox"]:checked ~ label{
+	transition: .2s ease-in;
+	background-color:darkgreen;
+	filter:brightness(200%);
+	
+}
+.car-seats label {
+	display: block;
+	position: relative;
+	width: 50px;
+	margin: 3px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 2.5rem;
+	padding: 4px 0;
+	background: #999;
+	border-radius: 5px;
+	animation-duration: 300ms;
+	animation-fill-mode: both;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+}
+.tooltipSeatInfo{
+	visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tooltipTitle{
+	text-align:center;
+	font-weight:bold;
+	font-size:16px;	
+}
+.tooltipSeatInfo::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.car-seats:hover .tooltipSeatInfo {
+  visibility: visible;
+}
+
+.car-seat-annotate{
+	padding:20px;
+	margin:20px;
+	
+}
+.car-seat-annotate .title{
+	position:relative;
+	top:-20px;
+}
+.car-seat-annotate .row{
+	padding:20px;
+}
+
+.demo{
+	height:50px;
+}
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav-content {
+  display: none;
+  position: fixed;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height:300px;
+  z-index: 1;
+ box-shadow: 1px 1px 20px gray;
+  border-radius: 0 0 10px 10px;
+}
+
+.subnav-content a {
+  float: left;
+  color: black!important;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width:220px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  padding:5px;
+  margin:5px;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.ticketInfo{
+	font-size:12px;
+}
+.cart-item{
+	padding:5px;
+}
+.toast-body{
+	border:1px solid;
+	margin:5px;
+	text-align: left;
+}
+.toast-body .col-2{
+	padding:0;
+}
+.empty{
+	text-align:center;
+	padding:10px;
+	color:lightgray;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.tab .tablinks{
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width:25%;
+  padding: 14px 16px;
+  
+}
+.tab .tablinks.active{
+	font-weight:bold;
+	background-color:orange!important;
+	color:white!important;
+	transition: 0.3s ease-out-in;
+}
+.tab .tablinks.hide{
+	font-weight:bold;
+	background-color:inherit;
+	color:black!important;
+	transition: 0.3s ease-out-in;
+}
+/* Style the tab content */
+.tabcontent {
+  display: block;
+  padding: 6px 12px;
+  
+}
+
+ a[disabled="disabled"] {
+        pointer-events: none;
+    }
+
